@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+main {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.icon {
+    position: absolute;
+    right: 3%;
+    top: -10%;
+}
+
+.viewList {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/view_list_black_24dp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.viewModule {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/view_module_black_24dp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.cardsView {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 6.5%;
+    align-items:self-end;
+    padding: 2%;
+    list-style: none;
+}
+
+.listView {
+    flex-direction: column;
+    justify-content: start;
+    gap: 5%;
+    padding: 2%;
+    list-style: none;
+}
+
+.shopCard {
+    text-align: center;
+    width: 25%;
+    padding: 2%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.shopCard img {
+    width: 150px;
+    height: 150px;
+}
+
+.shopCard:nth-child(n+4) {
+    margin-top: 5%;
+}
+
+.shopItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.shopItem img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.addCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: red;
+}
+
+button {
+    padding: 2%;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: white;
+}
